@@ -17,6 +17,11 @@ void draw() {
 
   fill(229,194,14); //yellow rectangle
   rect(100,100,50,50);
+  
+  fill(138,157,56);
+  rotate(radians(45));
+  rectMode(CENTER);
+  rect(width/2,height/2,100,100);
 }
 
 
