@@ -10,13 +10,7 @@
       fill(0, 153, 255);
       rectMode(CENTER);
       rect(width/2,height/2,width/2,height/2);
-    
-      
-      fill(250, 0, 117);
-      //comment out rotate to see where the rectangle would draw without rotating
-      rotate(radians(45)); 
-      rectMode(CENTER);
-      rect(width/2,height/2,width/2,height/2);
+
       
       fill(120);
       pushMatrix();
