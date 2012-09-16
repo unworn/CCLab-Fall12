@@ -13,15 +13,16 @@ void setup() {
 
 void draw() {
   background(250, 0, 117);
-  for (int i = donuts.size()-1; i >= 0; i--) { 
+  for (int i = 0; i < donuts.size(); i++) { 
     // An ArrayList doesn't know what it is storing so we have to declare the object
     Donut myDonut = (Donut) donuts.get(i);
     myDonut.move();
     myDonut.display();
-//    if (myDonut.finished()) {
-//      // Items can be deleted with remove()
-//      donuts.remove(i);
-//    }
+    if (myDonut.finished()) {
+      // Items can be deleted with remove()
+      donuts.remove(i);
+      println(donuts.size()); //check the no. of items in your arraylist
+    }
   }
 }
 void mousePressed() {

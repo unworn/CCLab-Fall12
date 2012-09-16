@@ -5,7 +5,7 @@ class Donut {
   float xSpeed;
   float ySpeed;
   float acc;
-  float life = 255;
+  float trans = 255;
 
   Donut(float tempX, float tempY) { 
     c = color(255);
@@ -20,10 +20,10 @@ class Donut {
   void display() { 
     rectMode(CENTER);
     noStroke();
-    fill(c);
+    fill(c, trans);
     smooth();
     ellipse(xPos,yPos,20,20);
-    fill(250, 0, 117);
+    fill(250, 0, 117,trans);
     ellipse(xPos,yPos, 10, 10);
   }
 
@@ -45,9 +45,10 @@ class Donut {
   }
   
  boolean finished() {
-    // Balls fade out
-    life--;
-    if (life < 0) {
+    //create a condition here that dictates if 
+    //donut should be removed from arraylist
+    trans--; 
+    if (trans < 0) {
       return true;
     } else {
       return false;
