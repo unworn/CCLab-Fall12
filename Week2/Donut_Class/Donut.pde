@@ -5,11 +5,11 @@ class Donut {
   float ySpeed;
   float acc;
 
-  Donut(float tempYSpeed) { 
+  Donut() { 
     c = color(209, 67, 15);
     xPos = random(0,width);
     yPos = height/2;
-    ySpeed = tempYSpeed;
+    ySpeed = 4;
     acc = random(0.05,0.3);
   }
 

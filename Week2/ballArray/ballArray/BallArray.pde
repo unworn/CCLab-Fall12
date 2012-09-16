@@ -5,7 +5,7 @@ for MFADT CCLab Fall 12
 
 // initialize variables
 int ballCount = 50;
-int vel = 5;
+//int vel = 5;
 
 //set up position arrays
 float [] posX = new float [ballCount];
@@ -27,6 +27,8 @@ void setup() {
     
     velX[i] = random(-5,5);
     velY[i] = random(-5,5);
+
+    
   }
 }
 
