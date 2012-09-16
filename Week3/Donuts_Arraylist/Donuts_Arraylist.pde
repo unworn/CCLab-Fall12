@@ -14,7 +14,7 @@ void setup() {
 void draw() {
   background(250, 0, 117);
   for (int i = donuts.size()-1; i >= 0; i--) { 
-    // An ArrayList doesn't know what it is storing so we have to cast the object coming out
+    // An ArrayList doesn't know what it is storing so we have to declare the object
     Donut myDonut = (Donut) donuts.get(i);
     myDonut.move();
     myDonut.display();
@@ -25,6 +25,6 @@ void draw() {
   }
 }
 void mousePressed() {
-  // A new ball object is added to the ArrayList (by default to the end)
+  // A new Donutis added to the ArrayList (by default to the end)
   donuts.add(new Donut(mouseX, mouseY));
 }
