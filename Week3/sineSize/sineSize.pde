@@ -20,11 +20,11 @@ void draw(){
   background(255);
   angle = frameCount * 0.09; 
   r = frameCount * 0.09;
-  change = map(sin(angle),-1, 1, 0, 1);
+  change = map(sin(angle),-1, 1, 35, 40);
   
   rChange = map(sin(r),-1, 1, 0, 255);
   fill(rChange, g, b);
   noStroke();
-  ellipse(xPos, yPos, 300*change, 300*change);
+  ellipse(xPos, yPos, change, change);
   
 }
